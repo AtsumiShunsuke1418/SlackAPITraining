@@ -1,0 +1,14 @@
+<template>
+  <template if:true={isChangePanel}>
+  <lightning-card title="コンポーネントテスト">
+    <div>切り替わります</div>
+    <lightning-button label="ここをおす" class="slds-m-left_x-small" onclick={clickedButton}></lightning-button>
+    </lightning-card>
+  </template>
+  <template if:false={isChangePanel}>
+    <lightning-card title="コンポーネントテスト">
+      <div>切り替わりました</div>
+      <lightning-button variant="destructive-text" label="ここをおす" class="slds-m-left_x-small" onclick={clickedButton}></lightning-button>
+  </lightning-card>
+  </template>
+</template>
