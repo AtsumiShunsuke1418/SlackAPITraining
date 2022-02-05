@@ -22,7 +22,7 @@ global class getSlackDMId {
 			this.body = (Map<String, Object>) JSON.deserializeUntyped(this.rawBody);
 		}
 	}
-//apiMethodnameとparamsを引数に取るcallApiメソッド 返り値は
+
 	public Response callApi(String apiMethodName, Map<String, Object> params) {
 		HttpRequest request = new HttpRequest();
 		request.setMethod('POST');
@@ -43,4 +43,3 @@ global class getSlackDMId {
 		return new Response(this.http.send(request));
 	}
 }
-
