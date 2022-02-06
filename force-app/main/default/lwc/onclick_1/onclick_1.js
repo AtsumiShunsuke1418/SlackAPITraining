@@ -7,7 +7,7 @@ export default class onclick_1 extends LightningElement {
         if(this.isChangePanel) {
             this.isChangePanel = false;
         } else {
-            this.isChangePanel = true;_
+            this.isChangePanel = true;
         }
         // this.isChangePanel = false;
     }
